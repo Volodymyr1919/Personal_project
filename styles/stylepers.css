@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html,
+body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+header
+{
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(225deg, rgba(117,0,255,1) 25%, rgba(255,255,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.language {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.language__flag {
+    font-size: larger;
+}
+.restname{
+    position: absolute;
+    top: 10px;
+    color: wheat;
+    font-size: 25px;
+}
+.personal_card
+{
+    background: rgb(60, 0, 255);
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    color: wheat;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main
+{
+    background: linear-gradient(405deg, rgba(117,0,255,1) 25%, rgba(255,255,255,1) 100%);
+    width: 100%;
+    height: calc(100% - 350px);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15px 0 0 0;
+}
+p
+{
+    margin: 0;
+}
+.get_bonus
+{
+    margin-top: 10px;
+    width: 100%;
+    height: 120px;
+    background: #5d00c7b5;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bonus__text
+{
+    color: tan;
+    font-weight: 500;
+}
+.count_container
+{
+    width: 155px;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: tan;
+}
+.count_container-win {
+    color: greenyellow;
+}
+.bonus__count
+{
+    height: 10px;
+    width: 9%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+.bonus__count-active
+{
+    background: rgb(60, 0, 255);
+}
+label {
+    color: wheat;
+    font-weight: 300;
+    font-size: 12px;
+}
+.bonus__descr
+{
+    display: flex;
+    color: tan;
+    font-weight: 300;
+    font-size: 12px;
+}

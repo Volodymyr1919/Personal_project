@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/registration.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <button type="submit" class="submbut" id="logIn">Log In</button>
+
+    </header>
+
+
+    <main>
+
+        <button type="submit" class="submbut" id="owner">Owner</button><br>
+
+        <div class="wrapper__owner">
+
+            <label for="owner" class="label">Owner</label> <br>
+
+            <div class="input_field">
+                <iconify-icon icon="ic:baseline-business-center"></iconify-icon>
+                <input type="text" class="input_text" placeholder="Enter name your business" id="business_name">
+            </div><br>
+
+            <label for="selection" class="selection_label">Choose type of business</label>
+            <select name="Type_business" class="selection" id="type_business">
+                <option value="restaurant">Restaurant</option>
+                <option value="hairdressing_salon">Hairdressing salon</option>
+                <option value="gas_station">Gas station</option>
+                <option value="auto_repair_shop">Auto repair shop</option>
+                <option value="pharmacy">Pharmacy</option>
+                <option value="tailoring_studio">Tailoring studio</option>
+                <option value="bath_sauna">Bath, sauna</option>
+                <option value="bowling">Bowling</option>
+                <option value="bakery">Bakery</option>
+                <option value="pet_shop">Pet Shop</option>
+                <option value="store">Store</option>
+            </select><br><br>
+
+            <div class="input_field">
+                <iconify-icon icon="ic:outline-account-circle"></iconify-icon>
+                <input type="text" class="input_text" placeholder="Enter your name" id="owners_name">
+            </div><br>
+
+            <div class="input_field">
+                <iconify-icon icon="material-symbols:drive-file-rename-outline-outline-sharp"></iconify-icon>
+                <input type="text" class="input_text" placeholder="Enter your surname" id="owners_surname">
+            </div><br>
+
+            <div class="input_field">
+                <iconify-icon icon="carbon:password"></iconify-icon>
+                <input type="password" class="input_text" placeholder="Create your password" id="owners_password">
+            </div><br>
+
+            <button type="submit" class="submbut" id="Regisrt_owner">Sign Up</button><br>
+
+        </div><br>
+
+        <button type="submit" class="submbut" id="visitor">Visitor</button><br>
+
+        <div class="wrapper__visitor">
+
+            <label for="visitor" class="label">Visitor</label><br>
+
+            <label for="selection" class="selection_label">Choose type of business</label>
+            <select name="Type_business" class="selection" id="select_type">
+                <option value="restaurant">Restaurant</option>
+                <option value="hairdressing_salon">Hairdressing salon</option>
+                <option value="gas_station">Gas station</option>
+                <option value="auto_repair_shop">Auto repair shop</option>
+                <option value="pharmacy">Pharmacy</option>
+                <option value="tailoring_studio">Tailoring studio</option>
+                <option value="bath_sauna">Bath, sauna</option>
+                <option value="bowling">Bowling</option>
+                <option value="bakery">Bakery</option>
+                <option value="pet_shop">Pet Shop</option>
+                <option value="store">Store</option>
+            </select><br><br>
+
+            <label for="selection" class="selection_label">Choose name of business</label>
+            <select name="Name_business" class="selection" id="select_name">
+
+            </select><br><br>
+
+            <div class="input_field">
+                <iconify-icon icon="ic:outline-account-circle"></iconify-icon>
+                <input type="text" class="input_text" placeholder="Enter your name" id="visitors_name">
+            </div><br>
+
+            <div class="input_field">
+                <iconify-icon icon="material-symbols:drive-file-rename-outline-outline-sharp"></iconify-icon>
+                <input type="text" class="input_text" placeholder="Enter your surname" id="visitors_surname">
+            </div><br>
+
+            <div class="input_field">
+                <iconify-icon icon="carbon:password"></iconify-icon>
+                <input type="password" class="input_text" placeholder="Create your password" id="visitors_password">
+            </div><br>
+
+            <button type="submit" class="submbut" id="sign_up">Sign Up</button><br>
+
+        </div>
+
+    </main>
+        
+    <script src="/registration.js"></script>
+</body>
+</html>

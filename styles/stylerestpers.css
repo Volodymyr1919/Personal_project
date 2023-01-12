@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html,
+body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+header
+{
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(225deg, rgba(117,0,255,1) 25%, rgba(255,255,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.language {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.language__flag {
+    font-size: larger;
+}
+.restname{
+    position: absolute;
+    top: 10px;
+    color: wheat;
+    font-size: 25px;
+}
+.personal_card
+{
+    background: rgb(60, 0, 255);
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    color: wheat;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main
+{
+    background: linear-gradient(45deg, rgba(117,0,255,1) 45%, rgba(255,255,255,1) 100%);
+    width: 100%;
+    height: calc(100% - 350px);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15px 0 0 0;
+}
+p
+{
+    margin: 0;
+}
+.get_bonus
+{
+    width: 100%;
+    height: 80px;
+    background: #5d00c7b5;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bonus__text
+{
+    color: tan;
+    font-weight: 500;
+}
+.posts {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.post__currentContainer,
+.post__container {
+    width: 250px;
+    height: 130px;
+    display: none;
+    margin-top: 5px;
+    overflow-y: scroll;
+}
+.post__currentContainer-active,
+.post__container-active {
+    display: block;
+}
+.post__curdescr,
+.post__descr {
+    width: 250px;
+    height: fit-content;
+    border-radius: 15px;
+    background: #8f2dff;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: bisque;
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-bottom: 8px;
+}
+.post__curdescr div {
+    margin-left: 5px;
+}
+.post__curdescr {
+    width: 100%;
+}
+.post__descr::placeholder {
+    color: rgba(245, 222, 179, 0.823);
+    font-size: 15px;
+}
+#checkMore,
+.submit,
+.post__newOffer {
+    width: 120px;
+    height: 30px;
+    background: #8316ff;
+    border: none;
+    border-radius: 10px;
+    color: wheat;
+    font-size: 15px;
+}
+#checkMore {
+    position: absolute;
+    right: 20px;
+}
+#checkMore:hover,
+.submit:hover,
+.post__newOffer:hover {
+    cursor: pointer;
+}
+#checkMore:active,
+.submit:active,
+.post__newOffer:active {
+    background: #6f00ff;
+}
+.post__descr:focus {
+    outline: none;
+}
+.delete {
+    border: none;
+    background: rgb(44, 0, 189);
+    color: red;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.delete:active {
+    background: red;
+    color: rgb(44, 0, 189);
+}
+.delete:hover {
+    cursor: pointer;
+}
+.count_container
+{
+    color: rgb(32, 0, 138);
+    font-weight: 800;
+}
+.bonus__count
+{
+    height: 10px;
+    width: 9%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+label,
+.bonus__descr
+{
+    color: tan;
+    font-weight: 300;
+    font-size: 12px;
+}
+label{
+    color: wheat;
+}
+.wrapper .get_bonus{
+    margin-bottom: 10px;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    gap: 3%;
+    margin-top: 30px;
+}
+.for_clients,
+.for_offers {
+    width: 100%;
+    text-align: center;
+}
+.main_headers {
+    font-size: 18px;
+    font-weight: 600;
+}
+.hiddenTag {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #checkMore,
+    .submit,
+    .post__newOffer {
+        width: 90px;
+        height: 25px;
+        font-size: 12px;
+    }
+}
